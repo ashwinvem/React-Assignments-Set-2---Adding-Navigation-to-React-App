@@ -14,8 +14,8 @@ function App() {
       <Link to="/about">About</Link>
       <Switch>
         <Route path="/no-match" component={NoMatch} />
-        <Route path="/about" component={About} />
-        <Route path="/" component={Home} />
+        <Route path="/about" exact component={About} />
+        <Route path="/" exact component={Home} />
         <Redirect to="/no-match" />
       </Switch>
 
